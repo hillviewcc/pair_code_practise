@@ -2,6 +2,12 @@
   "python.testing.unittestEnabled": true,
   "python.testing.pytestEnabled": false,
   "python.testing.unittestArgs": ["-v", "-s", ".", "-p", "test_*.py"],
+  "python.languageServer": "Pylance",
   "python.analysis.extraPaths": ["src"],
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.completeFunctionParens": true,
+  "editor.quickSuggestions": { "other": "on", "comments": "off", "strings": "on" },
+  "editor.suggestOnTriggerCharacters": true,
+  "editor.parameterHints.enabled": true,
   "terminal.integrated.env.linux": { "PYTHONPATH": "${workspaceFolder}/src" }
 }
