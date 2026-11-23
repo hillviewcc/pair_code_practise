@@ -37,3 +37,8 @@ TASKS.md         the brief
 - No AI tools. Docs are fine: https://docs.python.org/3/library/
 - Reset to a clean start any time: `git checkout main && git reset --hard origin/main`
 - Practise on a branch so `main` stays clean: `git checkout -b attempt-1`
+- **Check your answers afterwards** (not during!): the `solutions` branch has a
+  reference implementation, a full test suite and `SOLUTIONS.md` with talking
+  points. Compare with `git diff attempt-1 origin/solutions -- src tests`, or
+  run the reference tests against your code with
+  `git checkout origin/solutions -- tests && python -m unittest -v`.
